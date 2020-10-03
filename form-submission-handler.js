@@ -79,6 +79,12 @@
             thankYouMessage.style.display = "block";
           }
         }
+      else
+      {
+        var error="Some error occurred, please try again!";
+        error.style.display = "block";
+        <h2> {error}</h2>
+      }
     };
     // url encode form data for sending as post data
     var encoded = Object.keys(data).map(function(k) {
